@@ -8,11 +8,11 @@ import (
 )
 
 func Home(w http.ResponseWriter, req *http.Request) {
-
+	render(w, "index.html")
 }
 
 func About() {
-
+	render(w, "about.html")
 }
 
 func render(w http.ResponseWriter, tmpl string) {
